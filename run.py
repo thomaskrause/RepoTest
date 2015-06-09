@@ -12,5 +12,8 @@ for test in os.listdir(testlocation):
 		fileContent = open(absfile, "r").read()
 		# replace the Firefox driver with phantomjs
 		fileContent = fileContent.replace("        self.driver = webdriver.Firefox()", "        self.driver = webdriver.PhantomJS()", 1)
-		print("Executing test " + test)
+		fileContent = fileContent.replace("""if __name__ == "__main__":
+    unittest.main()""", "", 1)
 		exec(fileContent)
+print("Executing all tests")
+unittest.main()
