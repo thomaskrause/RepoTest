@@ -24,7 +24,7 @@ class TestThatFailingWorksIgnoreMePlease(unittest.TestCase):
         driver.find_element_by_css_selector("#ex2-node-1-1 > td").click()
         driver.find_element_by_css_selector("#ex2-node-1-1-1 > td").click()
         driver.find_element_by_css_selector("#ex2-node-1-1-1-0 > td").click()
-        self.assertEqual(u"Vilmos Ágel", driver.find_element_by_css_selector("#ex2-node-1-1-1-0 > td").text)
+        self.assertEqual(u"Vilmos ÁgelABC", driver.find_element_by_css_selector("#ex2-node-1-1-1-0 > td").text)
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
