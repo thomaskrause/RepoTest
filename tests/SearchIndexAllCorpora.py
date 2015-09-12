@@ -40,6 +40,7 @@ class SearchIndexAllCorpora(unittest.TestCase):
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "RIDGES Herbology Version 4.1 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Shenoute A 22 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Tatian Corpus of Deviating Examples 2.1 (1)"))
+        self.assertTrue(self.is_element_present(By.LINK_TEXT, u"Der Nachlass des Vereins für musikalische Privataufführungen - digitale Edition. Vorversion (1)"))
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

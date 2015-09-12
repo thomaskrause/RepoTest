@@ -32,6 +32,7 @@ class BrowseAllCorpora(unittest.TestCase):
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Maerchenkorpus"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Mercurius"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "RIDGES-Herbology"))
+        self.assertTrue(self.is_element_present(By.LINK_TEXT, "VereinSchoenfeld"))
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
