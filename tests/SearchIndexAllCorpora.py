@@ -37,7 +37,7 @@ class SearchIndexAllCorpora(unittest.TestCase):
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Mannheimer Korpus Historischer Zeitungen und Zeitschriften (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Mercurius-Baumbank (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, u"Märchenkorpus Version 1.0 (1)"))
-        self.assertTrue(self.is_element_present(By.LINK_TEXT, "RIDGES Herbology Version 5.0 (1)"))
+        self.assertTrue(self.is_element_present(By.LINK_TEXT, "RIDGES Herbology Version 6.0 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Shenoute A 22 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Tatian Corpus of Deviating Examples 2.1 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, u"Der Nachlass des Vereins für musikalische Privataufführungen - digitale Edition. Vorversion (1)"))
