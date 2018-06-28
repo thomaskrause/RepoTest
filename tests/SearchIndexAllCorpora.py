@@ -27,7 +27,7 @@ class SearchIndexAllCorpora(unittest.TestCase):
             time.sleep(1)
         else: self.fail("time out")
         driver.find_element_by_link_text("more").click()
-        self.assertTrue(self.is_element_present(By.LINK_TEXT, "Deutsch Diachron Digital - Referenzkorpus Altdeutsch Version 1.0 (1)"))
+        self.assertTrue(self.is_element_present(By.LINK_TEXT, "Deutsch Diachron Digital - Referenzkorpus Altdeutsch Version 1.1 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Deutsche Diachrone Baumbank (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "Fuerstinnenkorrespondenz 1.1 (1)"))
         self.assertTrue(self.is_element_present(By.LINK_TEXT, "GerManC (1)"))
